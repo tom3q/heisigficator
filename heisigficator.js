@@ -126,7 +126,7 @@ function kanji2graph(kanji) {
 			if (node.joyo != "true")
 				continue;
 
-			out.innerHTML += joyo.search(node.element) + ' ';
+			out.innerHTML += (joyo.search(node.element) + 1) + ' ';
 		}
 
 		out.innerHTML += "<br/>Heisig primitives for " + kanji + ":<br/>";
